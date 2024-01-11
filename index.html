@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - TOKM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="TOKMTREE.png" sizes="96x96" type="image/x-icon">
+
+</head>
+
+<body>
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <h2>Login</h2>
+            <form id="login-form" autocomplete="on">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required autocomplete="username">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required autocomplete="current-password">
+
+                <button type="button" onclick="attemptLogin()">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="main-content" class="hidden">
+        <div class="header">
+            <h2 class="admin-title">Admin Dashboard</h2>
+            <div id="live-clock" class="live-clock">
+                <span class="digit" id="hour-tens">0</span>
+                <span class="digit" id="hour-units">0</span>
+                <span class="separator">:</span>
+                <span class="digit" id="minute-tens">0</span>
+                <span class="digit" id="minute-units">0</span>
+                <span class="separator">:</span>
+                <span class="digit" id="second-tens">0</span>
+                <span class="digit" id="second-units">0</span>
+            </div>
+            <div id="location-info" class="location-info">
+                <p id="ip-address">Your IP Address: Loading...</p>
+                <p id="user-location">Your Location: Loading...</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Add admin-specific content here -->
+        </div>
+
+        <!-- Footer section -->
+        <footer>
+            &copy; 2024 TOKM. All rights reserved.
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

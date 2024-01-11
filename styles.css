@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Light background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.modal h2 {
+    text-align: center;
+}
+
+.modal label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.modal input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.modal button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.header, footer {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.header {
+    background-color: #004d00; /* Dark green for the footer */
+    padding: 15px 0;
+}
+
+.admin-title {
+    margin: 0;
+    font-size: 36px; /* Larger font size */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Set content height to fill the viewport */
+    justify-content: center;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #004d00; /* Dark green for the footer */
+    position: fixed;
+    bottom: 0;
+    filter: none; /* Remove blur effect from the footer */
+}
+
+#live-clock {
+    font-size: 48px; /* Larger font size for the clock */
+    color: white; /* Change the color to white */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Glow effect */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+}
+
+.digit {
+    transition: opacity 0.5s ease-in-out; /* Adjust the transition duration and easing function as needed */
+    margin: 0 2px; /* Add some space between digits */
+}
+
+.fade-out {
+    opacity: 0;
+}
